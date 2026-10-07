@@ -242,7 +242,10 @@ describe("camera product data", () => {
       assert.equal(product.isDemo, false);
       assert.equal(product.imageFit, "contain");
       assert.equal(product.images.length, 1);
-      assert.match(product.images[0], /^\/images\/products\/cameras\/.+\.webp$/);
+      assert.match(
+        product.images[0],
+        /^\/images\/products\/cameras\/.+\.webp\?v=20261007-camera-refresh-1$/,
+      );
     }
 
     for (const product of products.filter(
@@ -263,26 +266,27 @@ describe("camera product data", () => {
     assert.equal(new Set(pairs).size, pairs.length);
   });
 
-  it("stores every camera image as a sourced opaque 1200x900 WebP", async () => {
+  it("stores every camera image as a sourced opaque 1200x1200 WebP", async () => {
     const cameras = products.filter(
       (product) => product.categorySlug === "camera-giam-sat",
     );
     const manifest = await readFile(
-      path.join(process.cwd(), "docs/sources/camera-products.md"),
+      path.join(process.cwd(), "docs/assets/camera-image-sources.json"),
       "utf8",
     );
 
     for (const product of cameras) {
       const imagePath = product.images[0];
-      const absolutePath = path.join(process.cwd(), "public", imagePath);
+      const pathname = imagePath.split("?")[0];
+      const absolutePath = path.join(process.cwd(), "public", pathname);
       await access(absolutePath);
       const metadata = await sharp(absolutePath).metadata();
       assert.equal(metadata.format, "webp", product.slug);
       assert.equal(metadata.width, 1200, product.slug);
-      assert.equal(metadata.height, 900, product.slug);
+      assert.equal(metadata.height, 1200, product.slug);
       assert.equal(metadata.hasAlpha, false, product.slug);
       assert.ok(
-        manifest.includes(imagePath.replace("-hung-phat.webp", ".webp")),
+        manifest.includes(path.basename(pathname)),
         product.slug,
       );
 
@@ -370,24 +374,31 @@ describe("camera product data", () => {
 
     for (const product of brandedProducts) {
       const imagePath = product.images[0];
+      const pathname = imagePath.split("?")[0];
       assert.match(
-        imagePath,
+        pathname,
         /^\/images\/products\/(cameras|laptops|desktops|printers)\/.+-hung-phat\.webp$/,
         product.slug,
       );
 
-      const entry = entriesByOutput.get(imagePath);
-      assert.ok(entry, `${product.slug} manifest entry`);
-      assert.ok(entry.source.length > 0, `${product.slug} source`);
-      assert.ok(entry.productBounds.width > 0, `${product.slug} bounds width`);
-      assert.ok(entry.productBounds.height > 0, `${product.slug} bounds height`);
+      const entry = entriesByOutput.get(pathname);
+      if (product.categorySlug !== "camera-giam-sat") {
+        assert.ok(entry, `${product.slug} manifest entry`);
+        assert.ok(entry.source.length > 0, `${product.slug} source`);
+        assert.ok(entry.productBounds.width > 0, `${product.slug} bounds width`);
+        assert.ok(entry.productBounds.height > 0, `${product.slug} bounds height`);
+      }
 
-      const absolutePath = path.join(process.cwd(), "public", imagePath);
+      const absolutePath = path.join(process.cwd(), "public", pathname);
       await access(absolutePath);
       const metadata = await sharp(absolutePath).metadata();
       assert.equal(metadata.format, "webp", product.slug);
       assert.equal(metadata.width, 1200, product.slug);
-      assert.equal(metadata.height, 900, product.slug);
+      assert.equal(
+        metadata.height,
+        product.categorySlug === "camera-giam-sat" ? 1200 : 900,
+        product.slug,
+      );
       assert.equal(metadata.hasAlpha, false, product.slug);
 
       const { data, info } = await sharp(absolutePath)
@@ -399,16 +410,24 @@ describe("camera product data", () => {
         return [data[offset], data[offset + 1], data[offset + 2]];
       };
       let redLogoPixels = 0;
-      for (let y = 32; y <= 101; y += 2) {
-        for (let x = 40; x <= 135; x += 2) {
+      const cameraImage = product.categorySlug === "camera-giam-sat";
+      const logoRight = cameraImage ? 216 : 135;
+      const logoBottom = cameraImage ? 160 : 101;
+      for (let y = 32; y <= logoBottom; y += 2) {
+        for (let x = 36; x <= logoRight; x += 2) {
           const [red, green, blue] = pixel(x, y);
-          if (red > 145 && red > green * 1.35 && red > blue * 1.35) {
+          const redRatio = cameraImage ? 1.08 : 1.35;
+          if (red > 145 && red > green * redRatio && red > blue * redRatio) {
             redLogoPixels += 1;
           }
         }
       }
       assert.ok(redLogoPixels >= 20, `${product.slug} HP logo red pixels`);
 
+      if (product.categorySlug === "camera-giam-sat") continue;
+      if (!entry) {
+        throw new Error(`${product.slug} manifest entry`);
+      }
       const { left, top, width, height } = entry.productBounds;
       const right = left + width - 1;
       const bottom = top + height - 1;

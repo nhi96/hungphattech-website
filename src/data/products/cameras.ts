@@ -82,7 +82,10 @@ export const cameraProducts: Product[] = seeds.map((seed, index) => ({
     { label: "Số ống kính", value: seed.dualLens ? "Hai ống kính" : seed.highlights.includes("Ba ống kính") ? "Ba ống kính" : "Một ống kính" },
   ],
   images: [
-    `/images/products/cameras/${seed.image.replace(/\.webp$/, "-hung-phat.webp")}`,
+    `/images/products/cameras/${seed.image.replace(
+      /\.webp$/,
+      "-hung-phat.webp",
+    )}?v=20261007-camera-refresh-1`,
   ],
   price: null,
   isDemo: false,
