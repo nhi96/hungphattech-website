@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 1,
+  "publishedRevision": 9,
+  "content": {
+    "site": {
+      "brandName": "HƯNG PHÁT",
+      "legalName": "Công ty TNHH Thiết Bị Công Nghệ Hưng Phát",
+      "address": "B7-02 Khu Đô Thị Phú Mỹ Lộc, Phường Tam Quan, Tỉnh Gia Lai",
+      "phones": [
+        {
+          "id": "phone-primary",
+          "display": "0937 100 368",
+          "value": "0937100368"
+        },
+        {
+          "id": "phone-secondary",
+          "display": "0357 985 073",
+          "value": "0357985073"
+        }
+      ],
+      "footerNote": "Địa chỉ: B7-02 Khu đô thị Phú Mỹ Lộc, Phường Tam Quan, Tỉnh Gia Lai."
+    },
+    "navigation": [
+      {
+        "id": "home",
+        "label": "Trang chủ",
+        "href": "/"
+      },
+      {
+        "id": "about",
+        "label": "Giới thiệu",
+        "href": "/gioi-thieu"
+      },
+      {
+        "id": "solutions",
+        "label": "Giải pháp",
+        "href": "/giai-phap"
+      },
+      {
+        "id": "products",
+        "label": "Sản phẩm",
+        "href": "/san-pham"
+      },
+      {
+        "id": "projects",
+        "label": "Dự án",
+        "href": "/du-an"
+      },
+      {
+        "id": "knowledge",
+        "label": "Kiến thức",
+        "href": "/kien-thuc"
+      },
+      {
+        "id": "contact",
+        "label": "Liên hệ",
+        "href": "/lien-he"
+      }
+    ],
+    "assets": {
+      "hero-solar": {
+        "id": "hero-solar",
+        "path": "/images/hero-solar-panels-array.jpg",
+        "alt": "Hệ thống pin năng lượng mặt trời",
+        "mime": "image/jpeg",
+        "width": 1376,
+        "height": 768
+      },
+      "category-solar": {
+        "id": "category-solar",
+        "path": "/images/category-solar.png",
+        "alt": "Ảnh minh họa điện mặt trời",
+        "mime": "image/png",
+        "width": 1200,
+        "height": 900
+      },
+      "category-camera": {
+        "id": "category-camera",
+        "path": "/images/category-camera.png",
+        "alt": "Ảnh minh họa camera giám sát",
+        "mime": "image/png",
+        "width": 1200,
+        "height": 900
+      },
+      "category-computer": {
+        "id": "category-computer",
+        "path": "/images/category-computer.png",
+        "alt": "Ảnh minh họa laptop và PC",
+        "mime": "image/png",
+        "width": 1200,
+        "height": 900
+      },
+      "category-lock": {
+        "id": "category-lock",
+        "path": "/images/category-lock.png",
+        "alt": "Ảnh minh họa khóa cửa thông minh",
+        "mime": "image/png",
+        "width": 1200,
+        "height": 900
+      },
+      "asset-ca22907f-38ff-4f70-b8f5-4cf2897f0ea9": {
+        "id": "asset-ca22907f-38ff-4f70-b8f5-4cf2897f0ea9",
+        "path": "/uploads/asset-ca22907f-38ff-4f70-b8f5-4cf2897f0ea9.webp",
+        "alt": "",
+        "mime": "image/webp",
+        "width": 1916,
+        "height": 821
+      },
+      "asset-feae6c9f-275f-401e-87a4-09b52913a816": {
+        "id": "asset-feae6c9f-275f-401e-87a4-09b52913a816",
+        "path": "/uploads/asset-feae6c9f-275f-401e-87a4-09b52913a816.webp",
+        "alt": "",
+        "mime": "image/webp",
+        "width": 1916,
+        "height": 821
+      },
+      "asset-63a79222-c1d0-48dc-9dc8-e2911b7772cb": {
+        "id": "asset-63a79222-c1d0-48dc-9dc8-e2911b7772cb",
+        "path": "/uploads/asset-63a79222-c1d0-48dc-9dc8-e2911b7772cb.webp",
+        "alt": "",
+        "mime": "image/webp",
+        "width": 1672,
+        "height": 941
+      },
+      "asset-6d4abe86-f5bf-4fab-a008-4b6901607833": {
+        "id": "asset-6d4abe86-f5bf-4fab-a008-4b6901607833",
+        "path": "/uploads/asset-6d4abe86-f5bf-4fab-a008-4b6901607833.webp",
+        "alt": "",
+        "mime": "image/webp",
+        "width": 1671,
+        "height": 460
+      },
+      "asset-56a0ab27-34db-4567-a06e-31a47c6ee082": {
+        "id": "asset-56a0ab27-34db-4567-a06e-31a47c6ee082",
+        "path": "/uploads/asset-56a0ab27-34db-4567-a06e-31a47c6ee082.webp",
+        "alt": "",
+        "mime": "image/webp",
+        "width": 2171,
+        "height": 724
+      },
+      "asset-ca749471-b82f-4518-945b-ac9a7038b0ca": {
+        "id": "asset-ca749471-b82f-4518-945b-ac9a7038b0ca",
+        "path": "/uploads/asset-ca749471-b82f-4518-945b-ac9a7038b0ca.webp",
+        "alt": "",
+        "mime": "image/webp",
+        "width": 720,
+        "height": 960
+      },
+      "asset-a5bf7743-d4c5-4548-a104-e0684c00ba5d": {
+        "id": "asset-a5bf7743-d4c5-4548-a104-e0684c00ba5d",
+        "path": "/uploads/asset-a5bf7743-d4c5-4548-a104-e0684c00ba5d.webp",
+        "alt": "",
+        "mime": "image/webp",
+        "width": 591,
+        "height": 1280
+      },
+      "asset-d9984fb2-d75b-4637-ab77-387d7f010506": {
+        "id": "asset-d9984fb2-d75b-4637-ab77-387d7f010506",
+        "path": "/uploads/asset-d9984fb2-d75b-4637-ab77-387d7f010506.webp",
+        "alt": "",
+        "mime": "image/webp",
+        "width": 497,
+        "height": 587
+      },
+      "asset-8035b886-2bad-498e-b277-fbf03e4789ac": {
+        "id": "asset-8035b886-2bad-498e-b277-fbf03e4789ac",
+        "path": "/uploads/asset-8035b886-2bad-498e-b277-fbf03e4789ac.webp",
+        "alt": "",
+        "mime": "image/webp",
+        "width": 1290,
+        "height": 1563
+      },
+      "asset-34d4e011-346a-4d56-bbff-1c693f7cb211": {
+        "id": "asset-34d4e011-346a-4d56-bbff-1c693f7cb211",
+        "path": "/uploads/asset-34d4e011-346a-4d56-bbff-1c693f7cb211.webp",
+        "alt": "",
+        "mime": "image/webp",
+        "width": 1290,
+        "height": 1887
+      },
+      "asset-ee11b5f6-b804-461d-a789-9e0b713967f9": {
+        "id": "asset-ee11b5f6-b804-461d-a789-9e0b713967f9",
+        "path": "/uploads/asset-ee11b5f6-b804-461d-a789-9e0b713967f9.webp",
+        "alt": "",
+        "mime": "image/webp",
+        "width": 1290,
+        "height": 2796
+      }
+    },
+    "pages": {
+      "home": {
+        "sectionOrder": [
+          "audiences",
+          "categories",
+          "featured",
+          "about",
+          "projects",
+          "process",
+          "knowledge",
+          "contact"
+        ],
+        "hero": {
+          "eyebrow": "Thiết bị và giải pháp công nghệ đa ngành",
+          "title": "GIẢI PHÁP CÔNG NGHỆ",
+          "highlight": "CHO NGÔI NHÀ & DOANH NGHIỆP",
+          "description": "Khám phá giải pháp Điện mặt trời, Camera giám sát, Laptop, PC và Khóa thông minh cùng Hưng Phát.",
+          "primaryLabel": "Nhận tư vấn",
+          "secondaryLabel": "Khám phá sản phẩm",
+          "image": {
+            "assetId": "hero-solar",
+            "focalX": "center",
+            "focalY": "center"
+          },
+          "style": {
+            "titleSize": "small",
+            "alignment": "left"
+          },
+          "metrics": [
+            {
+              "id": "metric-categories",
+              "value": "Tổng quan",
+              "label": "Danh mục chính"
+            },
+            {
+              "id": "metric-hotlines",
+              "value": "Liên hệ",
+              "label": "Hotline tư vấn"
+            },
+            {
+              "id": "metric-consulting",
+              "value": "Bảo hành",
+              "label": "Điểm tư vấn đa ngành"
+            }
+          ]
+        },
+        "categoryImages": {
+          "dien-mat-troi": {
+            "assetId": "asset-ca22907f-38ff-4f70-b8f5-4cf2897f0ea9",
+            "focalX": "center",
+            "focalY": "center"
+          },
+          "camera-giam-sat": {
+            "assetId": "asset-feae6c9f-275f-401e-87a4-09b52913a816",
+            "focalX": "center",
+            "focalY": "center"
+          },
+          "laptop-pc": {
+            "assetId": "asset-6d4abe86-f5bf-4fab-a008-4b6901607833",
+            "focalX": "center",
+            "focalY": "center"
+          },
+          "khoa-cua-thong-minh": {
+            "assetId": "asset-56a0ab27-34db-4567-a06e-31a47c6ee082",
+            "focalX": "center",
+            "focalY": "center"
+          }
+        },
+        "sections": {
+          "categories": {
+            "id": "categories",
+            "index": "01",
+            "eyebrow": "Danh mục chính",
+            "title": "Mọi giải pháp thông minh, tiết kiệm điện cho ngôi nhà – đã có HƯNG PHÁT đồng hành.",
+            "description": "HƯNG PHÁT – Một địa chỉ, trọn giải pháp công nghệ.",
+            "style": {
+              "titleSize": "large",
+              "alignment": "left"
+            }
+          },
+          "audiences": {
+            "id": "audiences",
+            "index": "02",
+            "eyebrow": "Theo nhu cầu sử dụng",
+            "title": "Giải pháp bắt đầu từ bối cảnh thực tế",
+            "description": "Cấu hình cuối cùng chỉ được đề xuất sau khi hiểu không gian, tác vụ và ngân sách.",
+            "style": {
+              "titleSize": "large",
+              "alignment": "left"
+            },
+            "buttonLabel": "Xem giải pháp đề xuất",
+            "items": [
+              {
+                "id": "family",
+                "title": "Gia đình",
+                "description": "Thiết bị tiện nghi, an ninh và sử dụng năng lượng hợp lý."
+              },
+              {
+                "id": "shop",
+                "title": "Cửa hàng",
+                "description": "Quan sát vận hành, máy tính bán hàng và kiểm soát ra vào."
+              },
+              {
+                "id": "office",
+                "title": "Văn phòng",
+                "description": "Hạ tầng thiết bị phục vụ công việc và quản lý không gian."
+              },
+              {
+                "id": "business",
+                "title": "Doanh nghiệp",
+                "description": "Cấu hình theo quy mô, mặt bằng và nhu cầu vận hành."
+              }
+            ]
+          },
+          "featured": {
+            "id": "featured",
+            "index": "03",
+            "eyebrow": "Kinh nghiệm Hưng Phát",
+            "title": "Đội ngũ với hơn 5 năm kinh nghiệm trong nghề !!!",
+            "description": "Với hơn 5 năm kinh nghiệm trong lĩnh vực năng lượng tái tạo, đặc biệt là điện mặt trời, HƯNG PHÁT không ngừng mang đến những giải pháp công nghệ thiết thực, hiện đại và hiệu quả cho khách hàng.\n\nBên cạnh các giải pháp điện mặt trời, HƯNG PHÁT còn cung cấp đa dạng sản phẩm máy tính, laptop, PC, thiết bị công nghệ và khóa cửa thông minh Smart Lock, đáp ứng nhu cầu từ gia đình, cá nhân đến doanh nghiệp.\n\n\nKinh nghiệm – Chất lượng – Tận tâm là nền tảng để HƯNG PHÁT đồng hành cùng khách hàng trong từng giải pháp.",
+            "style": {
+              "titleSize": "large",
+              "alignment": "left"
+            },
+            "images": [
+              {
+                "id": "store",
+                "label": "Cửa hàng Hưng Phát",
+                "alt": "Cửa hàng Hưng Phát",
+                "image": {
+                  "assetId": "asset-ca749471-b82f-4518-945b-ac9a7038b0ca",
+                  "focalX": "center",
+                  "focalY": "center"
+                }
+              },
+              {
+                "id": "team",
+                "label": "Đội ngũ công ty",
+                "alt": "Đội ngũ công ty Hưng Phát",
+                "image": {
+                  "assetId": "asset-a5bf7743-d4c5-4548-a104-e0684c00ba5d",
+                  "focalX": "center",
+                  "focalY": "center"
+                }
+              }
+            ]
+          },
+          "about": {
+            "id": "about",
+            "eyebrow": "Tìm hiểu về Hưng Phát",
+            "title": "Giải pháp công nghệ, Kiến tạo tương lai",
+            "paragraphs": [
+              "Công ty TNHH Thiết Bị Công Nghệ Hưng Phát định hướng cung cấp thiết bị và giải pháp phù hợp cho hộ gia đình, cửa hàng, văn phòng và doanh nghiệp.",
+              "Không chỉ cung cấp sản phẩm, HƯNG PHÁT hướng đến việc trở thành đối tác công nghệ đáng tin cậy của mỗi gia đình và doanh nghiệp. Chúng tôi đồng hành từ khâu tư vấn, lựa chọn thiết bị đến lắp đặt và hỗ trợ sau bán hàng, mang đến giải pháp phù hợp, vận hành hiệu quả và giá trị sử dụng lâu dài."
+            ],
+            "buttonLabel": "Tìm hiểu thêm",
+            "style": {
+              "titleSize": "large",
+              "alignment": "left"
+            }
+          },
+          "projects": {
+            "id": "projects",
+            "index": "04",
+            "eyebrow": "Dự án",
+            "title": "Một số công trình nổi bật",
+            "description": "",
+            "style": {
+              "titleSize": "large",
+              "alignment": "left"
+            },
+            "items": [
+              {
+                "id": "project-1",
+                "title": "Hệ thống Hybrid điện mặt trời cho trường mầm non",
+                "description": "Hệ điện mặt trời Hybrid 3 pha cho Trường Mầm non Ngôi Nhà Nhỏ – Hoài Châu gồm 26 tấm pin công suất 630W, tổng công suất giàn pin khoảng 16,38kWp, kết hợp inverter GoodWe 3 pha và pin lưu trữ Pylontech 16kWh. Hệ thống giúp ưu tiên sử dụng điện mặt trời vào ban ngày, lưu trữ phần điện dư để sử dụng khi cần, góp phần giảm chi phí điện và tăng tính chủ động, ổn định nguồn điện cho nhà trường.",
+                "alt": "",
+                "image": {
+                  "assetId": "asset-34d4e011-346a-4d56-bbff-1c693f7cb211",
+                  "focalX": "center",
+                  "focalY": "center"
+                }
+              },
+              {
+                "id": "project-2",
+                "title": "Hệ thống Hybrid điện mặt trời cho trung tâm anh ngữ",
+                "description": "Hệ thống điện mặt trời Hybrid gồm 18 tấm pin PV 630W, tổng công suất khoảng 11,34kWp, kết hợp biến tần SolaX 8kW và 2 bộ pin lưu trữ 16kWh. Giải pháp giúp tận dụng tối đa nguồn điện mặt trời vào ban ngày, lưu trữ điện để sử dụng vào buổi tối hoặc khi mất điện, đồng thời góp phần giảm khoảng 4–5 triệu đồng tiền điện mỗi tháng tùy nhu cầu sử dụng thực tế. Hệ thống được thiết kế vận hành ổn định, an toàn và có chính sách bảo hành lên đến 10 năm.",
+                "alt": "",
+                "image": {
+                  "assetId": "asset-ee11b5f6-b804-461d-a789-9e0b713967f9",
+                  "focalX": "center",
+                  "focalY": "center"
+                }
+              },
+              {
+                "id": "project-3",
+                "title": "Thầu phụ thi công hệ thống điện mặt trời các cơ quan, doanh nghiệp",
+                "description": "Công trình điện mặt trời công suất 60kW cho phường được thiết kế kết hợp giữa hệ bám tải hòa lưới và hệ Hybrid, giúp tận dụng tối đa nguồn năng lượng mặt trời, giảm điện năng tiêu thụ từ lưới và chủ động nguồn điện dự phòng khi cần thiết. Hệ thống vận hành song song, ưu tiên sử dụng điện mặt trời, hạn chế phát ngược lên lưới và nâng cao tính ổn định, an toàn cho toàn bộ phụ tải của công trình.",
+                "alt": "",
+                "image": {
+                  "assetId": "asset-8035b886-2bad-498e-b277-fbf03e4789ac",
+                  "focalX": "center",
+                  "focalY": "center"
+                }
+              },
+              {
+                "id": "project-4",
+                "title": "Hệ bơm tưới độc lập cho rẫy 2 hecta ở Eah'leo",
+                "description": "Hệ bơm tưới độc lập cho rẫy 2 hecta sử dụng nguồn năng lượng mặt trời để vận hành máy bơm, phù hợp cho khu vực xa điện lưới. Hệ thống cung cấp nước ổn định cho tưới cây, giúp tiết kiệm chi phí điện, vận hành tự động, bền bỉ và thân thiện với môi trường. Đây là giải pháp tối ưu cho các mô hình nông nghiệp cần chủ động nguồn nước tưới hằng ngày.",
+                "alt": "",
+                "image": {
+                  "assetId": "asset-d9984fb2-d75b-4637-ab77-387d7f010506",
+                  "focalX": "center",
+                  "focalY": "center"
+                }
+              }
+            ]
+          },
+          "process": {
+            "id": "process",
+            "index": "05",
+            "eyebrow": "Quy trình làm việc",
+            "title": "Từ nhu cầu thực tế đến giải pháp tối ưu",
+            "description": "Khảo sát miễn phí – Tư vấn tận tâm – Giải pháp phù hợp.",
+            "style": {
+              "titleSize": "large",
+              "alignment": "left"
+            },
+            "note": "Hãy liên hệ SĐT Hoặc Zalo: 0937.100.368 - 0357.985.073",
+            "items": [
+              {
+                "id": "receive",
+                "text": "Tiếp nhận nhu cầu"
+              },
+              {
+                "id": "consult",
+                "text": "Tư vấn cấu hình / khảo sát tận nơi"
+              },
+              {
+                "id": "quote",
+                "text": "Báo giá, Lên hợp đồng."
+              },
+              {
+                "id": "deliver",
+                "text": "Triển khai và bàn giao"
+              }
+            ]
+          },
+          "knowledge": {
+            "id": "knowledge",
+            "index": "06",
+            "eyebrow": "Kiến thức công nghệ",
+            "title": "Một số câu hỏi khách hàng quan tâm về sản phẩm",
+            "style": {
+              "titleSize": "large",
+              "alignment": "left"
+            },
+            "buttonLabel": "Đọc nội dung mẫu"
+          },
+          "contact": {
+            "id": "contact",
+            "eyebrow": "Yêu cầu tư vấn",
+            "title": "Trao đổi nhu cầu của bạn",
+            "description": "Mọi thắc mắc đều được Hưng Phát tư vấn tận tâm và hoàn toàn miễn phí. nên hãy liên hệ bên mình khi cần nhé!!!",
+            "style": {
+              "titleSize": "large",
+              "alignment": "left"
+            }
+          }
+        }
+      }
+    }
+  }
+}

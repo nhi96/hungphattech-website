@@ -1,0 +1,66 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+/deployment/
+/.artifacts/
+/artifacts/
+/tmp/
+/tmp-product-contact-sheet.png
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.editor-server.*.log
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# local visual content editor
+/.content/published.json
+/.content/draft.json
+/.content/history/
+/.content/transaction.json
+/public/uploads/*
+!/public/uploads/.gitkeep
+!/public/uploads/asset-34d4e011-346a-4d56-bbff-1c693f7cb211.webp
+!/public/uploads/asset-56a0ab27-34db-4567-a06e-31a47c6ee082.webp
+!/public/uploads/asset-63a79222-c1d0-48dc-9dc8-e2911b7772cb.webp
+!/public/uploads/asset-6d4abe86-f5bf-4fab-a008-4b6901607833.webp
+!/public/uploads/asset-8035b886-2bad-498e-b277-fbf03e4789ac.webp
+!/public/uploads/asset-a5bf7743-d4c5-4548-a104-e0684c00ba5d.webp
+!/public/uploads/asset-ca22907f-38ff-4f70-b8f5-4cf2897f0ea9.webp
+!/public/uploads/asset-ca749471-b82f-4518-945b-ac9a7038b0ca.webp
+!/public/uploads/asset-d9984fb2-d75b-4637-ab77-387d7f010506.webp
+!/public/uploads/asset-ee11b5f6-b804-461d-a789-9e0b713967f9.webp
+!/public/uploads/asset-feae6c9f-275f-401e-87a4-09b52913a816.webp
